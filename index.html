@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu Off Canvas</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<header class="cabecera">
+		<div>
+			<img class="toggle-nav" src="img/menu.svg" alt="">
+		</div>
+		<h1><a href="#">Titulo</a></h1>
+		<div class="dropdown">
+			<div class="aspa"><img src="img/cross.svg" alt=""></div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Works</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+
+/*====================================
+=            ON DOM READY            =
+====================================*/
+$(function() {
+	$('.toggle-nav, .aspa img').click(function() {
+    // Calling a function in case you want to expand upon this.
+    toggleNav();
+});
+});
+
+
+/*========================================
+=            CUSTOM FUNCTIONS            =
+========================================*/
+function toggleNav() {
+	if ($('.dropdown').hasClass('show-nav')) {
+  // Do things on Nav Close
+  $('.dropdown').removeClass('show-nav');
+} else {
+  // Do things on Nav Open
+  $('.dropdown').addClass('show-nav');
+}
+
+//$('#site-wrapper').toggleClass('show-nav');
+}
+</script>
+</body>
+</html>

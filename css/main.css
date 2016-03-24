@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}		
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+header{
+	width: 100%;
+	background: rgba(34, 34, 34, 0.9);
+	height: auto;
+	padding: 40px 0;
+	overflow: hidden;
+}
+.cabecera h1{
+	color: #fff;
+}
+.cabecera h1 a{
+		text-decoration: none;
+		color:#fff;
+}
+.cabecera div{
+	float: left;
+	width: 30%;
+}
+.cabecera  div img{
+	width: 50px;
+	color: white;
+	float: right;
+
+}
+.cabecera  h1{
+	text-align: center;
+	width: 70%;
+	float: left;
+	padding-right: 20%;
+	margin: 0;
+	font-family: lobster, sans-serif;
+}
+.cabecera .dropdown{
+	background: #02C39A;
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: all .35s ease;
+	-moz-transition: all .35s ease;
+	-ms-transition: all .35s ease;
+	-o-transition: all .35s ease;
+	transition: all .35s ease;
+
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	transform: translateX(-100%);
+
+	-webkit-transform: translate3d(-100%,0,0);
+	-moz-transform: translate3d(-100%,0,0);
+	-ms-transform: translate3d(-100%,0,0);
+	-o-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+
+	-webkit-transform: translateZ(0) translateX(-100%);
+	-moz-transform: translateZ(0) translateX(-100%);
+	-ms-transform: translateZ(0) translateX(-100%);
+	-o-transform: translateZ(0) translateX(-100%);
+	transform: translateZ(0) translateX(-100%);
+}
+.dropdown .aspa{
+	width: 100%;
+	float: right;
+	margin: 20px 25px 0 0;
+}
+.dropdown .aspa img{
+	cursor: pointer;
+}
+.dropdown ul{
+	padding-top: 100px;
+	font-size: 3em;
+	font-weight: lighter;
+	text-align: center;
+	list-style: none;
+	-webkit-transition-: all .35s ease;
+	-moz-transition-: all .35s ease;
+	-ms-transition-: all .35s ease;
+	-o-transition-: all .35s ease;
+	transition-: all .35s ease;
+}
+.dropdown a{
+	text-decoration: none;
+	color: rgba(34, 34, 34, 0.9);
+}
+.dropdown.show-nav { 
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0); 
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+
+	-webkit-transform: translateZ(0) translateX(0); 
+	-moz-transform: translateZ(0) translateX(0); 
+	-ms-transform: translateZ(0) translateX(0);
+	-o-transform: translateZ(0) translateX(0); 
+	transform: translateZ(0) translateX(0);
+}
+.toggle-nav{
+	display: block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background: #fff;
+	border-radius: 5px;
+}
+.cabecera div img.toggle-nav{
+	float: none;
+	margin-left: 20px;
+}
+
+
